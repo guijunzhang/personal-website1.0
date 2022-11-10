@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Guijun Zhang - Frontend Developer</title>
+        <meta name="description" content="Guijun Zhang's personal website that showcases all of his achievements, his works, and his current projects">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="src/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,400;8..144,800&display=swap" rel="stylesheet"> 
+        <link rel="icon" type="image/x-icon" href="src/img/coffee-547490_1280.png">
+        <script src="https://kit.fontawesome.com/b107e05113.js" crossorigin="anonymous" defer></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js" defer></script> 
+    </head>
+    <body>
+        <div class="home" id="home">
+            <h1>Hello! I'm <span class="accented">Guijun Zhang</span>.</h1>
+            <h1>I'm a <span class="accented">front-end</span> web developer</h1>
+            <h1>specialized in <span class="accented">UX design.</span></h1>
+        </div>
+        <nav>
+            <a href="#home">
+                <h2>HOME</h2>
+            </a>
+            <a href="#about">
+                <h2>ABOUT</h2>
+            </a>
+            <!-- <a href="#achievements">
+                <h2>ACHIEVEMENTS</h2>
+            </a>
+            <a href="#projects">
+                <h2>PROJECTS</h2>
+            </a>  -->
+
+            <a href="#contact">
+                <h2>CONTACT</h2>
+            </a>
+        </nav>
+        <section class="about" id="about">
+            <h1>ABOUT</h1>
+            <div class="header-bar"></div>
+            <div class="traits">
+                <div class="trait">
+                    <i class="fa-solid fa-3x fa-graduation-cap"></i>
+                    <h2>Education</h2>
+                </div>
+                <div class="trait">
+                    <i class="fa-solid fa-3x fa-universal-access"></i>
+                    <h2>Accessbility</h2>
+                </div>
+                <div class="trait">
+                    <i class="fa-regular fa-3x fa-lightbulb"></i>
+                    <h2>Creativity</h2>
+                </div>
+            </div>
+            <div class="description">
+                <img src="src/img/pfp_bg.jpg" class="pfp">
+                <div class="descriptions">
+                    <p>I'm a front-end developer specialized in UX design in Tempe, AZ.</p>
+                    <p>I aim to make information <span class="accented">more accessible</span> and promote</p>
+                    <p>education <span class="accented">for all</span>, while making the world <span class="accented">more fun and creative.</span></p>
+                    <a href="#contact"><h2>Let's create a better world!</h2></a>
+                </div>
+            </div>
+            <div class="chart">
+                <div id="skill-piechart"></div>
+                <div class="skills">
+                    <h2>Skill sets</h2>
+                    <div class="skill">
+                        <div id="web"></div>
+                        <p>Web Design</p>
+                    </div>
+                    <div class="skill">
+                        <div id="coding"></div>
+                        <p>Front-end Coding</p>
+                    </div>
+                    <div class="skill">
+                        <div id="coffee"></div>
+                        <p>coffee ☕️</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h1>CONTACT</h1>
+            <div class="header-bar"></div>
+            <p >I love connecting with people that shares the same passion.</p>
+            <p class="accented">Any questions or collaborations are welcome!</p>
+            <form id="contact-form">
+                <input placeholder="Name*" type="text" name="name" required="">
+                <input placeholder="Email*" type="email" name="email" required="">
+                <textarea placeholder="Message*" type="text" name="message" required=""></textarea>
+                <input id="submit" class="button" type="submit" value="SUBMIT">
+            </form>
+        </section>
+        <a class="centered" href="#home"><i class="fa-solid fa-4x fa-circle-up"></i></a>
+        <footer>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/guijunzhang/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-4x fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/justguijun/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-4x fa-square-instagram"></i>
+                </a>
+                <a href="https://github.com/guijunzhang" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-4x fa-square-github"></i>
+                </a>
+            </div>
+            <a><p>GUIJUN ZHANG © 2022</p></a>
+        </footer>
+        <script src="src/index.js" async></script>
+    </body>
+</html>
