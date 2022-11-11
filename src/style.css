@@ -148,6 +148,10 @@ footer {
     flex-direction: column;
     gap: 8px;
     align-items: center;
+    color: var(--secondary-color);
+}
+.trait > h2 {
+    color: var(--light-mode);
 }
 .traits {
     display: flex;
@@ -223,6 +227,11 @@ footer {
 #contact-form > input[type="submit"] {
     background-color: var(--primary-color);
     color: var(--light-mode);
+    height: 48px;
+}
+#contact-form > input[type="submit"]:hover {
+    animation: slowTrans 0.5s;
+    background-color: var(--heading-color);
 }
 #contact-form > textarea {
     background-color: var(--dark-mode);
@@ -290,5 +299,13 @@ footer {
     }
     to {
         border-bottom: 2px solid var(--secondary-color);
+    }
+}
+@keyframes slowTrans {
+    from {
+        background-color: var(--primary-color);
+    } 
+    to {
+        background-color: var(--heading-color);
     }
 }
