@@ -30,7 +30,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 160px 8px 8px 8px;
+    margin: 8px 8px 8px 8px;
 }
 /* Typography */
 h1 {
@@ -109,11 +109,13 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    padding: 91px 16px 100px 16px;
+    padding: 16px;
+    padding-top: 91px;
+    height: 100vh;
 }
 footer {
     background-color: var(--dark-mode);
-    padding: 80px 16px 16px 16px;
+    padding: 16px 16px 16px 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,13 +123,20 @@ footer {
     gap: 16px;
 }
 .contact {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75vh;
+}
+.contact-section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     overflow: hidden;
     white-space: nowrap;
+    gap: 8px;
 }
 .description {
     display: flex;
