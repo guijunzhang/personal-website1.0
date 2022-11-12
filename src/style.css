@@ -193,6 +193,10 @@ footer {
 .socials > a {
     color: var(--light-mode);
 }
+.socials > a:hover {
+    animation: slowTrans1 0.5s;
+    color: var(--accented-color);
+}
 #skill-piechart {
     height: 30vh;
     width: 30vh;
@@ -316,5 +320,13 @@ footer {
     } 
     to {
         background-color: var(--heading-color);
+    }
+}
+@keyframes slowTrans1 {
+    from {
+        color: var(--light-mode);
+    } 
+    to {
+        color: var(--accented-color);
     }
 }
