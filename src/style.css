@@ -66,11 +66,33 @@ nav > a:hover {
 }
 /* Components */
 .home {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.home-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-circle-down {
+    padding: 16px 0;
+}
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+}
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 nav {
     height: 75px;
@@ -92,8 +114,17 @@ nav {
 }
 /* Sections */
 .header-bar {
-    border: solid 2px var(--light-mode);
+    border-top: solid 2px var(--light-mode);
+    border-bottom: solid 2px var(--light-mode);
     width: 50px;
+    
+}
+.long {
+    width: 100%;
+    border-color: var(--primary-color);
+}
+#badge {
+    color: var(--light-mode);
 }
 section {
     display: flex;
